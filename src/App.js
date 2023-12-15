@@ -68,11 +68,12 @@ function App() {
     <div className="App">
       <div className='drum-border'>
       <div id='drum-machine' className='drum-machine'>
-        <div id='drum-pads'>{activeKey}</div>
+      <div id='display'>{activeKey}</div>
+      <div id='drum-pads'>
         <div className='drum-pads'>
         {drumPads.map((drumPad) => (
         <div onClick={() => {
-          playSound(drumPad.text)
+          playSound(drumPad.text) 
         }} 
            className='drum-pad' 
            id={drumPad.src}
@@ -89,6 +90,7 @@ function App() {
         </div>
         ))}
         </div>
+      </div>
       </div>
       </div>
     </div>
