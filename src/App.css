@@ -1,0 +1,38 @@
+* {
+  background-color: gray;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 33vh;
+}
+
+.drum-border {
+  border: 5px solid orange;
+  width: 80%;
+  height: 50%;
+}
+
+.drum-machine {
+  color: black;
+  font-weight: bold;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  float: left;
+}
+
+.drum-pad {
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin:3%;
+  box-shadow: 0 5px 10px 0;
+}
